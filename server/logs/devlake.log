@@ -1,0 +1,266 @@
+time="2023-07-06 14:24:22" level=info msg="[35md:/goProject/lake/backend/core/runner/db.go:90
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045 (28000): Access denied for user ''@'ns800091.home.com' (using password: NO)"
+time="2023-07-06 14:33:55" level=info msg="[35md:/goProject/lake/backend/core/runner/db.go:90
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045 (28000): Access denied for user ''@'ns800091.home.com' (using password: NO)"
+time="2023-07-06 14:37:54" level=info msg="mysql://10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True&username=root&password=123456"
+time="2023-07-06 14:37:54" level=info msg="[35md:/goProject/lake/backend/core/runner/db.go:91
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045 (28000): Access denied for user ''@'ns800091.home.com' (using password: NO)"
+time="2023-07-06 14:42:05" level=info msg="mysql://10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True&user.username=root&user.password=123456"
+time="2023-07-06 14:42:05" level=info 
+time="2023-07-06 14:42:05" level=info msg="[35md:/goProject/lake/backend/core/runner/db.go:92
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045 (28000): Access denied for user ''@'ns800091.home.com' (using password: NO)"
+time="2023-07-06 14:45:42" level=info msg="mysql://10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True&user.username=root&user.password=123456"
+time="2023-07-06 14:45:42" level=info 
+time="2023-07-06 14:45:42" level=info msg="[35md:/goProject/lake/backend/core/runner/db.go:92
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045 (28000): Access denied for user ''@'ns800091.home.com' (using password: NO)"
+time="2023-07-06 15:12:05" level=info msg="mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:12:05" level=info msg=root
+time="2023-07-06 15:12:06" level=info msg="[31;1md:/goProject/lake/backend/impls/dalgorm/dalgorm.go:144 [35;1mError 1071 (42000): Specified key was too long; max key length is 767 bytes
+[0m[33m[50.705ms] [34;1m[rows:0][0m CREATE TABLE `_devlake_migration_history` (`created_at` datetime(3) NULL,`script_version` bigint unsigned,`script_name` varchar(255),`comment` longtext,PRIMARY KEY (`script_version`,`script_name`))"
+time="2023-07-06 15:16:05" level=info msg="mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:16:05" level=info msg=root
+time="2023-07-06 15:16:05" level=info msg="[31;1md:/goProject/lake/backend/impls/dalgorm/dalgorm.go:144 [35;1mError 1071 (42000): Specified key was too long; max key length is 767 bytes
+[0m[33m[27.232ms] [34;1m[rows:0][0m CREATE TABLE `_devlake_migration_history` (`created_at` datetime(3) NULL,`script_version` bigint unsigned,`script_name` varchar(255),`comment` longtext,PRIMARY KEY (`script_version`,`script_name`))"
+time="2023-07-06 15:17:11" level=info msg="mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:17:11" level=info msg=root
+time="2023-07-06 15:17:11" level=info msg="[31;1md:/goProject/lake/backend/impls/dalgorm/dalgorm.go:144 [35;1mError 1071 (42000): Specified key was too long; max key length is 767 bytes
+[0m[33m[7.565ms] [34;1m[rows:0][0m CREATE TABLE `_devlake_migration_history` (`created_at` datetime(3) NULL,`script_version` bigint unsigned,`script_name` varchar(255),`comment` longtext,PRIMARY KEY (`script_version`,`script_name`))"
+time="2023-07-06 15:20:22" level=info msg="mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:20:22" level=info msg=root
+time="2023-07-06 15:20:22" level=info msg="[31;1md:/goProject/lake/backend/impls/dalgorm/dalgorm.go:144 [35;1mError 1071 (42000): Specified key was too long; max key length is 767 bytes
+[0m[33m[5.614ms] [34;1m[rows:0][0m CREATE TABLE `_devlake_migration_history` (`created_at` datetime(3) NULL,`script_version` bigint unsigned,`script_name` varchar(200),`comment` longtext,PRIMARY KEY (`script_version`,`script_name`))"
+time="2023-07-06 15:21:34" level=info msg="mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:21:34" level=info msg=root
+time="2023-07-06 15:21:34" level=info msg="migration initialized"
+time="2023-07-06 15:21:34" level=info msg=" [migrator db] mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:21:34" level=info msg=" [migrator db] root"
+time="2023-07-06 15:21:35" level=error msg="failed to load plugins
+	caused by: CreateFile bin/plugins: The system cannot find the path specified.
+	Wraps: (2) CreateFile bin/plugins
+	Wraps: (3) The system cannot find the path specified.
+	Error types: (1) *hintdetail.withDetail (2) *fs.PathError (3) syscall.Errno"
+time="2023-07-06 15:28:10" level=info msg="mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:28:10" level=info msg=root
+time="2023-07-06 15:28:10" level=info msg="migration initialized"
+time="2023-07-06 15:28:10" level=info msg=" [migrator db] mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:28:10" level=info msg=" [migrator db] root"
+time="2023-07-06 15:28:10" level=error msg="failed to load plugins
+	caused by: CreateFile bin/plugins: The system cannot find the path specified.
+	Wraps: (2) CreateFile bin/plugins
+	Wraps: (3) The system cannot find the path specified.
+	Error types: (1) *hintdetail.withDetail (2) *fs.PathError (3) syscall.Errno"
+time="2023-07-06 15:33:29" level=info msg="mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:33:29" level=info msg=root
+time="2023-07-06 15:33:29" level=info msg="migration initialized"
+time="2023-07-06 15:33:29" level=info msg=" [migrator db] mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:33:29" level=info msg=" [migrator db] root"
+time="2023-07-06 15:33:29" level=info msg="Loading remote plugins"
+time="2023-07-06 15:33:29" level=error msg="failed to load plugins
+	caused by: CreateFile python/plugins: The system cannot find the path specified.
+	Wraps: (2) CreateFile python/plugins
+	Wraps: (3) The system cannot find the path specified.
+	Error types: (1) *hintdetail.withDetail (2) *fs.PathError (3) syscall.Errno"
+time="2023-07-06 15:35:01" level=info msg="mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:35:01" level=info msg=root
+time="2023-07-06 15:35:02" level=info msg="migration initialized"
+time="2023-07-06 15:35:02" level=info msg=" [migrator db] mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:35:02" level=info msg=" [migrator db] root"
+time="2023-07-06 15:35:02" level=info msg="Loading remote plugins"
+time="2023-07-06 15:35:02" level=error msg="failed to load plugins
+	caused by: CreateFile python/plugins: The system cannot find the path specified.
+	Wraps: (2) CreateFile python/plugins
+	Wraps: (3) The system cannot find the path specified.
+	Error types: (1) *hintdetail.withDetail (2) *fs.PathError (3) syscall.Errno"
+time="2023-07-06 15:36:13" level=info msg="mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:36:13" level=info msg=root
+time="2023-07-06 15:36:13" level=info msg="migration initialized"
+time="2023-07-06 15:36:13" level=info msg=" [migrator db] mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:36:13" level=info msg=" [migrator db] root"
+time="2023-07-06 15:36:13" level=info msg="Loading remote plugins"
+time="2023-07-06 15:36:13" level=error msg="failed to load plugins
+	caused by: Error calling plugin-info
+	Wraps: (2) exec: "./D:\\goProject\\lake\\backend\\python\\plugins\\azuredevops\\run.sh": file does not exist
+	Wraps: (3) exec: "./D:\\goProject\\lake\\backend\\python\\plugins\\azuredevops\\run.sh"
+	Wraps: (4) file does not exist
+	Error types: (1) *hintdetail.withDetail (2) *hintdetail.withDetail (3) *exec.Error (4) *errors.errorString"
+time="2023-07-06 15:49:23" level=info msg="mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:49:23" level=info msg=root
+time="2023-07-06 15:49:23" level=info msg="migration initialized"
+time="2023-07-06 15:49:23" level=info msg=" [migrator db] mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:49:23" level=info msg=" [migrator db] root"
+time="2023-07-06 15:49:24" level=info msg="Loading remote plugins"
+time="2023-07-06 15:49:24" level=error msg="failed to load plugins
+	caused by: Error calling plugin-info
+	Wraps: (2) exec: "./D:\\goProject\\lake\\backend\\python\\plugins\\azuredevops\\run.sh": file does not exist
+	Wraps: (3) exec: "./D:\\goProject\\lake\\backend\\python\\plugins\\azuredevops\\run.sh"
+	Wraps: (4) file does not exist
+	Error types: (1) *hintdetail.withDetail (2) *hintdetail.withDetail (3) *exec.Error (4) *errors.errorString"
+time="2023-07-06 15:49:45" level=info msg="mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:49:45" level=info msg=root
+time="2023-07-06 15:49:45" level=info msg="migration initialized"
+time="2023-07-06 15:49:45" level=info msg=" [migrator db] mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:49:45" level=info msg=" [migrator db] root"
+time="2023-07-06 15:49:46" level=info msg=" [migrator] applying migration script add commit line change table:202209221033"
+time="2023-07-06 15:49:46" level=info msg="[31;1md:/goProject/lake/backend/impls/dalgorm/dalgorm.go:144 [35;1mError 1071 (42000): Specified key was too long; max key length is 767 bytes
+[0m[33m[11.980ms] [34;1m[rows:0][0m CREATE TABLE `commit_line_change` (`id` varchar(255),`created_at` datetime(3) NULL,`updated_at` datetime(3) NULL,`_raw_data_params` varchar(255),`_raw_data_table` varchar(255),`_raw_data_id` bigint unsigned,`_raw_data_remark` longtext,`commit_sha` varchar(40),`new_file_path` varchar(255),`line_no_new` bigint,`line_no_old` bigint,`old_file_path` varchar(255),`hunk_num` bigint,`changed_type` varchar(255),`prev_commit` varchar(255),PRIMARY KEY (`id`),INDEX `idx_commit_line_change_raw_data_params` (`_raw_data_params`))"
+time="2023-07-06 15:51:16" level=info msg="mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:51:16" level=info msg=root
+time="2023-07-06 15:51:16" level=info msg="migration initialized"
+time="2023-07-06 15:51:16" level=info msg=" [migrator db] mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:51:16" level=info msg=" [migrator db] root"
+time="2023-07-06 15:51:17" level=info msg=" [migrator] applying migration script add commit line change table:202209221033"
+time="2023-07-06 15:51:17" level=info msg="[31;1md:/goProject/lake/backend/impls/dalgorm/dalgorm.go:144 [35;1mError 1071 (42000): Specified key was too long; max key length is 767 bytes
+[0m[33m[13.723ms] [34;1m[rows:0][0m CREATE TABLE `commit_line_change` (`id` varchar(160),`created_at` datetime(3) NULL,`updated_at` datetime(3) NULL,`_raw_data_params` varchar(255),`_raw_data_table` varchar(255),`_raw_data_id` bigint unsigned,`_raw_data_remark` longtext,`commit_sha` varchar(40),`new_file_path` varchar(255),`line_no_new` bigint,`line_no_old` bigint,`old_file_path` varchar(255),`hunk_num` bigint,`changed_type` varchar(255),`prev_commit` varchar(255),PRIMARY KEY (`id`),INDEX `idx_commit_line_change_raw_data_params` (`_raw_data_params`))"
+time="2023-07-06 15:53:51" level=info msg="mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:53:51" level=info msg=root
+time="2023-07-06 15:53:51" level=info msg="migration initialized"
+time="2023-07-06 15:53:51" level=info msg=" [migrator db] mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:53:51" level=info msg=" [migrator db] root"
+time="2023-07-06 15:53:51" level=info msg=" [migrator] applying migration script add commit line change table:202209221033"
+time="2023-07-06 15:53:51" level=info msg="[31;1md:/goProject/lake/backend/impls/dalgorm/dalgorm.go:144 [35;1mError 1071 (42000): Specified key was too long; max key length is 767 bytes
+[0m[33m[8.417ms] [34;1m[rows:0][0m CREATE TABLE `commit_line_change` (`id` varchar(160),`created_at` datetime(3) NULL,`updated_at` datetime(3) NULL,`_raw_data_params` varchar(255),`_raw_data_table` varchar(255),`_raw_data_id` bigint unsigned,`_raw_data_remark` longtext,`commit_sha` varchar(40),`new_file_path` varchar(160),`line_no_new` bigint,`line_no_old` bigint,`old_file_path` varchar(160),`hunk_num` bigint,`changed_type` varchar(160),`prev_commit` varchar(160),PRIMARY KEY (`id`),INDEX `idx_commit_line_change_raw_data_params` (`_raw_data_params`))"
+time="2023-07-06 15:55:25" level=info msg="mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:55:25" level=info msg=root
+time="2023-07-06 15:55:25" level=info msg="migration initialized"
+time="2023-07-06 15:55:25" level=info msg=" [migrator db] mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:55:25" level=info msg=" [migrator db] root"
+time="2023-07-06 15:55:26" level=info msg=" [migrator] applying migration script add commit line change table:202209221033"
+time="2023-07-06 15:55:26" level=info msg="[31;1md:/goProject/lake/backend/impls/dalgorm/dalgorm.go:144 [35;1mError 1071 (42000): Specified key was too long; max key length is 767 bytes
+[0m[33m[9.610ms] [34;1m[rows:0][0m CREATE TABLE `commit_line_change` (`id` varchar(160),`created_at` datetime(3) NULL,`updated_at` datetime(3) NULL,`_raw_data_params` varchar(255),`_raw_data_table` varchar(255),`_raw_data_id` bigint unsigned,`_raw_data_remark` longtext,`commit_sha` varchar(40),`new_file_path` varchar(160),`line_no_new` bigint,`line_no_old` bigint,`old_file_path` varchar(160),`hunk_num` bigint,`changed_type` varchar(160),`prev_commit` varchar(160),PRIMARY KEY (`id`),INDEX `idx_commit_line_change_raw_data_params` (`_raw_data_params`))"
+time="2023-07-06 15:56:32" level=info msg="mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:56:32" level=info msg=root
+time="2023-07-06 15:56:32" level=info msg="migration initialized"
+time="2023-07-06 15:56:32" level=info msg=" [migrator db] mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:56:32" level=info msg=" [migrator db] root"
+time="2023-07-06 15:56:33" level=info msg=" [migrator] applying migration script add commit line change table:202209221033"
+time="2023-07-06 15:56:33" level=info msg="[31;1md:/goProject/lake/backend/impls/dalgorm/dalgorm.go:144 [35;1mError 1071 (42000): Specified key was too long; max key length is 767 bytes
+[0m[33m[6.314ms] [34;1m[rows:0][0m CREATE TABLE `commit_line_change` (`id` varchar(160),`created_at` datetime(3) NULL,`updated_at` datetime(3) NULL,`_raw_data_params` varchar(255),`_raw_data_table` varchar(255),`_raw_data_id` bigint unsigned,`_raw_data_remark` longtext,`commit_sha` varchar(40),`new_file_path` varchar(160),`line_no_new` bigint,`line_no_old` bigint,`old_file_path` varchar(160),`hunk_num` bigint,`changed_type` varchar(160),`prev_commit` varchar(160),PRIMARY KEY (`id`),INDEX `idx_commit_line_change_raw_data_params` (`_raw_data_params`))"
+time="2023-07-06 15:59:18" level=info msg="mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:59:18" level=info msg=root
+time="2023-07-06 15:59:18" level=info msg="migration initialized"
+time="2023-07-06 15:59:18" level=info msg=" [migrator db] mysql://root:123456@10.6.14.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 15:59:18" level=info msg=" [migrator db] root"
+time="2023-07-06 15:59:18" level=info msg=" [migrator] applying migration script add commit line change table:202209221033"
+time="2023-07-06 15:59:19" level=info msg=" [migrator] applying migration script create init schemas:20220406212344"
+time="2023-07-06 15:59:19" level=info msg="[31;1md:/goProject/lake/backend/impls/dalgorm/dalgorm.go:144 [35;1mError 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JSON,`status` longtext,`message` longtext,`progress` float,`failed_sub_task` lon' at line 1
+[0m[33m[3.893ms] [34;1m[rows:0][0m CREATE TABLE `_devlake_tasks` (`id` bigint unsigned AUTO_INCREMENT,`created_at` datetime(3) NULL,`updated_at` datetime(3) NULL,`plugin` varchar(191),`options` JSON,`status` longtext,`message` longtext,`progress` float,`failed_sub_task` longtext,`pipeline_id` bigint unsigned,`pipeline_row` bigint,`pipeline_col` bigint,`began_at` datetime(3) NULL,`finished_at` datetime(3) NULL,`spent_seconds` bigint,PRIMARY KEY (`id`),INDEX `idx__devlake_tasks_plugin` (`plugin`),INDEX `idx__devlake_tasks_pipeline_id` (`pipeline_id`),INDEX `idx__devlake_tasks_finished_at` (`finished_at`))"
+time="2023-07-06 19:41:35" level=info msg="mysql://root:123456@127.0.0.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 19:41:35" level=info msg=root
+time="2023-07-06 19:41:35" level=info msg="migration initialized"
+time="2023-07-06 19:41:35" level=info msg=" [migrator db] mysql://root:123456@127.0.0.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-06 19:41:35" level=info msg=" [migrator db] root"
+time="2023-07-06 19:41:35" level=info msg=" [migrator] applying migration script add commit line change table:202209221033"
+time="2023-07-06 19:41:35" level=info msg=" [migrator] applying migration script create init schemas:20220406212344"
+time="2023-07-06 19:41:35" level=info msg=" [migrator] applying migration script Rename step to stage :20220505212344"
+time="2023-07-06 19:41:35" level=info msg=" [migrator] applying migration script add column `subtasks` at _devlake_tasks:20220601000005"
+time="2023-07-06 19:41:35" level=info msg=" [migrator] applying migration script add mode field to blueprint:20220616110537"
+time="2023-07-06 19:41:35" level=info msg=" [migrator] applying migration script blueprint normal mode support:20220622110537"
+time="2023-07-06 19:41:35" level=info msg=" [migrator] applying migration script create domain layer init schemas:20220707232344"
+time="2023-07-06 19:41:36" level=info msg=" [migrator] applying migration script create subtask schema:20220711000001"
+time="2023-07-06 19:41:36" level=info msg=" [migrator] applying migration script add commit_file_components components table,update commit_files table:20220722165805"
+time="2023-07-06 19:41:37" level=info msg=" [migrator] applying migration script add project_mapping table to domain layer:20220725152355"
+time="2023-07-06 19:41:37" level=info msg=" [migrator] applying migration script remove notes from domain layer:20220727165805"
+time="2023-07-06 19:41:37" level=info msg=" [migrator] applying migration script rename pull_request_number to pull_request_key, issue_number to issue_key:20220729165805"
+time="2023-07-06 19:41:37" level=info msg=" [migrator] applying migration script add NoPKModel to commit_parents:20220801162735"
+time="2023-07-06 19:41:37" level=info msg=" [migrator] applying migration script add cicd models:20220818232735"
+time="2023-07-06 19:41:37" level=info msg=" [migrator] applying migration script rename user_id to account_id in pull_request_comments and issue_comments:20220826120824"
+time="2023-07-06 19:41:37" level=info msg=" [migrator] applying migration script modify tables for dora:20220829232735"
+time="2023-07-06 19:41:37" level=info msg=" [migrator] applying migration script add column `type` at boards:20220830142321"
+time="2023-07-06 19:41:37" level=info msg=" [migrator] applying migration script encrypt Blueprint:20220904142321"
+time="2023-07-06 19:41:37" level=info msg=" [migrator] applying migration script encrypt Pipeline:20220904162121"
+time="2023-07-06 19:41:37" level=info msg=" [migrator] applying migration script modify cicd pipeline:20220905232735"
+time="2023-07-06 19:41:37" level=info msg=" [migrator] applying migration script modify cicd tasks:20220909232735"
+time="2023-07-06 19:41:37" level=info msg=" [migrator] applying migration script add length of commit_file file_path:20220913165805"
+time="2023-07-06 19:41:37" level=info msg=" [migrator] applying migration script modify board repos:20220913232735"
+time="2023-07-06 19:41:37" level=info msg=" [migrator] applying migration script add origin change lead time for pr:20220913235535"
+time="2023-07-06 19:41:38" level=info msg=" [migrator] applying migration script UpdateSchemas for renamePipelineCommits:20220915000025"
+time="2023-07-06 19:41:38" level=info msg=" [migrator] applying migration script modify lead_time_minutes:20220929145125"
+time="2023-07-06 19:41:38" level=info msg=" [migrator] applying migration script add snapshot table:20221009111241"
+time="2023-07-06 19:41:38" level=info msg=" [migrator] applying migration script Create collector state table:20221101000001"
+time="2023-07-06 19:41:38" level=info msg=" [migrator] applying migration script Remove cicd_pipeline_relation:20221107000001"
+time="2023-07-06 19:41:38" level=info msg=" [migrator] applying migration script add skip_on_fail to _devlake_pipelines and _devlake_blueprint:20221107095744"
+time="2023-07-06 19:41:38" level=info msg=" [migrator] applying migration script add project tables:20221109194734"
+time="2023-07-06 19:41:38" level=info msg=" [migrator] applying migration script modify commits diffs:20221109232735"
+time="2023-07-06 19:41:38" level=info msg=" [migrator] applying migration script add project pr metric tables:20221111000001"
+time="2023-07-06 19:41:38" level=info msg=" [migrator] applying migration script add labels' schema for blueprint and pipeline:20221115000034"
+time="2023-07-06 19:41:38" level=info msg=" [migrator] applying migration script add project to blueprint:20221117184342"
+time="2023-07-06 19:41:38" level=info msg=" [migrator] applying migration script add project issue metric tables:20221120000001"
+time="2023-07-06 19:41:38" level=info msg=" [migrator] applying migration script save state for collector:20221125000038"
+time="2023-07-06 19:41:38" level=info msg=" [migrator] applying migration script rename fields in project pr metric tables:20221201000001"
+time="2023-07-06 19:41:38" level=info msg=" [migrator] applying migration script add enable to project metric:20221201190341"
+time="2023-07-06 19:41:38" level=info msg=" [migrator] applying migration script add cicd scope and add cicd_scope_id and drop builds&jobs:20221207000001"
+time="2023-07-06 19:41:38" level=info msg=" [migrator] applying migration script add original_project to issues:20221215142543"
+time="2023-07-06 19:41:38" level=info msg=" [migrator] applying migration script add error_name to _devlake_tasks and _devlake_pipelines:20221221150548"
+time="2023-07-06 19:41:38" level=info msg=" [migrator] applying migration script encrypt task.options:20221221162121"
+time="2023-07-06 19:41:39" level=info msg=" [migrator] applying migration script add original type to issue:20221230162121"
+time="2023-07-06 19:41:39" level=info msg=" [migrator] applying migration script rename project metrics:20222123191424"
+time="2023-07-06 19:41:39" level=info msg=" [migrator] applying migration script add time_after to _devlake_collector_latest_state:20230213200040"
+time="2023-07-06 19:41:39" level=info msg=" [migrator] applying migration script modify issues story_point from int64 to float64:20230214145125"
+time="2023-07-06 19:41:39" level=info msg=" [migrator] applying migration script add commit_sha index for commit_files:20230222145127"
+time="2023-07-06 19:41:39" level=info msg=" [migrator] applying migration script add host, namespace, repo_name to issue_repo_commits:20230222153154"
+time="2023-07-06 19:41:39" level=info msg=" [migrator] applying migration script remove created_date_after from _devlake_collector_latest_state:20230223200040"
+time="2023-07-06 19:41:39" level=info msg=" [migrator] applying migration script add code quality domain:20230301000082"
+time="2023-07-06 19:41:39" level=info msg=" [migrator] applying migration script add issue_assignees table:20230402000041"
+time="2023-07-06 19:41:39" level=info msg=" [migrator] applying migration script Rename Collector state table for Singer Taps:20230405000001"
+time="2023-07-06 19:41:39" level=info msg=" [migrator] applying migration script Rename cicd_piopeline_commits repo to repo_url:20230406170701"
+time="2023-07-06 19:41:39" level=info msg=" [migrator] applying migration script Rename project_pr_metrics.deployment_id to deployment_commit_id:20230416080701"
+time="2023-07-06 19:41:39" level=info msg=" [migrator] applying migration script add commit author info to pull_request_commits table:20230419145129"
+time="2023-07-06 19:41:39" level=info msg=" [migrator] applying migration script add cicd_deployment_commits table:20230426150702"
+time="2023-07-06 19:41:39" level=info msg=" [migrator] applying migration script add original status to pull_requests:20230508162121"
+time="2023-07-06 19:41:39" level=info msg=" [migrator] applying migration script add calendar months:20230511000001"
+time="2023-07-06 19:41:39" level=info msg=" [migrator] applying migration script change pull_request_comments.pr_id to varchar(255) type:20230516000001"
+time="2023-07-06 19:41:39" level=info msg=" [migrator] applying migration script Rename finished_commits_diffs to _tool_refdiff_finished_commits_diffs:20230516000002"
+time="2023-07-06 19:41:39" level=info msg=" [migrator] applying migration script add updated_date to issue_comments:20230517162121"
+time="2023-07-06 19:41:39" level=info msg="total 0 blueprints were scheduled"
+time="2023-07-06 19:41:39" level=info msg="Db migration confirmation needed"
+time="2023-07-06 19:41:39" level=info msg=" [pipeline service] acquire lock"
+time="2023-07-06 19:41:39" level=info msg=" [pipeline service] get lock and wait next pipeline"
+time="2023-07-07 17:03:17" level=info msg="mysql://root:123456@127.0.0.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-07 17:03:17" level=info msg=root
+time="2023-07-07 17:03:17" level=info msg="migration initialized"
+time="2023-07-07 17:03:17" level=info msg=" [migrator db] mysql://root:123456@127.0.0.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-07 17:03:17" level=info msg=" [migrator db] root"
+time="2023-07-07 17:03:18" level=info msg="total 0 blueprints were scheduled"
+time="2023-07-07 17:03:18" level=info msg="Db migration confirmation needed"
+time="2023-07-07 17:03:18" level=info msg=" [pipeline service] acquire lock"
+time="2023-07-07 17:03:18" level=info msg=" [pipeline service] get lock and wait next pipeline"
+time="2023-07-08 10:01:07" level=info msg="mysql://root:123456@127.0.0.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-08 10:01:07" level=info msg=root
+time="2023-07-08 10:01:07" level=info msg="migration initialized"
+time="2023-07-08 10:01:07" level=info msg=" [migrator db] mysql://root:123456@127.0.0.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-08 10:01:07" level=info msg=" [migrator db] root"
+time="2023-07-08 10:01:30" level=info msg="plugin loaded pluginsDir D:/goProject/lake/backend/plugins"
+time="2023-07-08 10:02:49" level=info msg="total 0 blueprints were scheduled"
+time="2023-07-08 10:02:52" level=info msg="Db migration confirmation needed"
+time="2023-07-08 10:02:52" level=info msg=" [pipeline service] acquire lock"
+time="2023-07-08 10:02:52" level=info msg=" [pipeline service] get lock and wait next pipeline"
+time="2023-07-08 10:04:26" level=info msg="mysql://root:123456@127.0.0.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-08 10:04:27" level=info msg=root
+time="2023-07-08 10:04:27" level=info msg="migration initialized"
+time="2023-07-08 10:04:27" level=info msg=" [migrator db] mysql://root:123456@127.0.0.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-08 10:04:27" level=info msg=" [migrator db] root"
+time="2023-07-08 10:04:45" level=info msg="plugin loaded pluginsDir D:/goProject/lake/backend/plugins"
+time="2023-07-08 10:08:26" level=info msg="total 0 blueprints were scheduled"
+time="2023-07-08 10:08:26" level=info msg="Db migration confirmation needed"
+time="2023-07-08 10:08:26" level=info msg=" [pipeline service] acquire lock"
+time="2023-07-08 10:08:26" level=info msg=" [pipeline service] get lock and wait next pipeline"
+time="2023-07-08 10:10:02" level=info msg="mysql://root:123456@127.0.0.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-08 10:10:02" level=info msg=root
+time="2023-07-08 10:10:03" level=info msg="migration initialized"
+time="2023-07-08 10:10:03" level=info msg=" [migrator db] mysql://root:123456@127.0.0.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-08 10:10:03" level=info msg=" [migrator db] root"
+time="2023-07-08 10:10:42" level=info msg="plugin loaded pluginsDir D:\\goProject\\lake\\backend\\plugins"
+time="2023-07-08 10:10:42" level=info msg="total 0 blueprints were scheduled"
+time="2023-07-08 10:10:42" level=info msg="Db migration confirmation needed"
+time="2023-07-08 10:10:42" level=info msg=" [pipeline service] acquire lock"
+time="2023-07-08 10:10:42" level=info msg=" [pipeline service] get lock and wait next pipeline"
+time="2023-07-08 10:14:30" level=info msg="mysql://root:123456@127.0.0.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-08 10:14:30" level=info msg=root
+time="2023-07-08 10:14:30" level=info msg="migration initialized"
+time="2023-07-08 10:14:30" level=info msg=" [migrator db] mysql://root:123456@127.0.0.1:3306/db_lake?charset=utf8mb4&parseTime=True"
+time="2023-07-08 10:14:30" level=info msg=" [migrator db] root"
+time="2023-07-08 10:20:47" level=info msg="plugin loaded pluginsDir D:\\goProject\\lake\\backend\\plugins"
+time="2023-07-08 10:26:38" level=info msg="total 0 blueprints were scheduled"
+time="2023-07-08 10:26:38" level=info msg="Db migration confirmation needed"
+time="2023-07-08 10:26:38" level=info msg=" [pipeline service] acquire lock"
+time="2023-07-08 10:26:38" level=info msg=" [pipeline service] get lock and wait next pipeline"

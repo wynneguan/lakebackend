@@ -1,0 +1,473 @@
+{
+    "info": {
+        "title": "{{.PluginName}} plugin documentation",
+        "version": "1.0.0"
+    },
+    "openapi": "3.0.2",
+    "paths": {
+        "/plugins/{{.PluginName}}/connections/{connectionId}": {
+            "get": {
+                "description": "Get a connection",
+                "parameters": [
+                    {
+                        "$$ref": "#/components/parameters/connectionId"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$$ref": "#/components/schemas/connection"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "There is no connection with given id"
+                    }
+                }
+            },
+            "patch": {
+                "description": "Update a connection",
+                "parameters": [
+                    {
+                        "$$ref": "#/components/parameters/connectionId"
+                    },
+                    {
+                        "name": "connection",
+                        "required": true,
+                        "in": "body",
+                        "schema": {
+                            "$$ref": "#/components/schemas/connection"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$$ref": "#/components/schemas/connection"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "description": "Delete a connection",
+                "parameters": [
+                    {
+                        "$$ref": "#/components/parameters/connectionId"
+                    }
+                ],
+                "response": {
+                    "200": {
+                        "description": "The connection has been deleted"
+                    },
+                    "400": {
+                        "description": "There is no connection with given id"
+                    }
+                }
+            }
+        },
+        "/plugins/{{.PluginName}}/connections": {
+            "get": {
+                "description": "Get all connections",
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$$ref": "#/components/schemas/connection"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "description": "Create a connection",
+                "parameters": [
+                    {
+                        "name": "connection",
+                        "required": true,
+                        "in": "body",
+                        "schema": {
+                            "$$ref": "#/components/schemas/connection"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$$ref": "#/components/schemas/connection"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/plugins/{{.PluginName}}/test": {
+            "post": {
+                "description": "Test if a connection is valid",
+                "parameters": [
+                    {
+                        "name": "connection",
+                        "required": true,
+                        "in": "body",
+                        "schema": {
+                            "$$ref": "#/components/schemas/connection"
+                        }
+                    }
+                ]
+            },
+            "response": {
+                "200": {
+                    "description": "The connection is valid"
+                },
+                "400": {
+                    "description": "The connection is not valid"
+                }
+            }
+        },
+        "/plugins/{{.PluginName}}/connections/{connectionId}/scopes/{scopeId}": {
+            "get": {
+                "description": "Get a scope",
+                "parameters": [
+                    {
+                        "$$ref": "#/components/parameters/connectionId"
+                    },
+                    {
+                        "$$ref": "#/components/parameters/scopeId"
+                    },
+                    {
+                        "name": "blueprints",
+                        "required": false,
+                        "description": "return blueprints using these scopes in the payload",
+                        "in": "query",
+                        "schema": {
+                            "$$ref": "bool"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$$ref": "#/components/schemas/scope"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "description": "Update a scope",
+                "parameters": [
+                    {
+                        "$$ref": "#/components/parameters/connectionId"
+                    },
+                    {
+                        "$$ref": "#/components/parameters/scopeId"
+                    },
+                    {
+                        "name": "scope",
+                        "required": true,
+                        "in": "body",
+                        "schema": {
+                            "$$ref": "#/components/schemas/scope"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$$ref": "#/components/schemas/scope"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "description": "Delete a scope and its associated data",
+                "parameters": [
+                    {
+                        "$$ref": "#/components/parameters/connectionId"
+                    },
+                    {
+                        "$$ref": "#/components/parameters/scopeId"
+                    },
+                    {
+                        "name": "scope",
+                        "required": true,
+                        "in": "body",
+                        "schema": {
+                            "$$ref": "#/components/schemas/scope"
+                        }
+                    },
+                    {
+                        "name": "delete_data_only",
+                        "required": false,
+                        "in": "query",
+                        "schema": {
+                            "$$ref": "bool"
+                        }
+                    }
+                ]
+            }
+        },
+        "/plugins/{{.PluginName}}/connections/{connectionId}/scopes": {
+            "get": {
+                "description": "Get all scopes",
+                "parameters": [
+                    {
+                        "$$ref": "#/components/parameters/pageSize"
+                    },
+                    {
+                        "$$ref": "#/components/parameters/page"
+                    },
+                    {
+                        "name": "blueprints",
+                        "required": false,
+                        "description": "return blueprints using these scopes in the payload",
+                        "in": "query",
+                        "schema": {
+                            "$$ref": "bool"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$$ref": "#/components/schemas/scope"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "description": "Create a list of scopes",
+                "parameters": [
+                    {
+                        "name": "scopes",
+                        "required": true,
+                        "in": "body",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$$ref": "#/components/schemas/scope"
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$$ref": "#/components/schemas/scope"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/plugins/{{.PluginName}}/connections/{connectionId}/transformation_rules": {
+            "get": {
+                "description": "Get all transformation rules",
+                "parameters": [
+                    {
+                        "$$ref": "#/components/parameters/pageSize"
+                    },
+                    {
+                        "$$ref": "#/components/parameters/page"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$$ref": "#/components/schemas/transformationRule"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "description": "Create a transformation rule",
+                "parameters": [
+                    {
+                        "name": "rules",
+                        "required": true,
+                        "in": "body",
+                        "schema": {
+                            "$$ref": "#/components/schemas/transformationRule"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$$ref": "#/components/schemas/transformationRule"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/plugins/{{.PluginName}}/connections/{connectionId}/transformation_rules/{ruleId}": {
+            "get": {
+                "description": "Get a transformation rule",
+                "parameters": [
+                    {
+                        "$$ref": "#/components/parameters/ruleId"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$$ref": "#/components/schemas/transformationRule"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "description": "Update a transformation rule",
+                "parameters": [
+                    {
+                        "$$ref": "#/components/parameters/ruleId"
+                    },
+                    {
+                        "name": "rule",
+                        "required": true,
+                        "in": "body",
+                        "schema": {
+                            "$$ref": "#/components/schemas/transformationRule"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$$ref": "#/components/schemas/transformationRule"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "connection": {{.ConnectionSchema}},
+            "transformationRule": {{.TransformationRuleSchema}},
+            "scope": {
+                "title": "Scope",
+                "type": "object",
+                "properties": {
+                    "scopeId": {
+                        "title": "scope id",
+                        "type": "string"
+                    },
+                    "scopeName": {
+                        "title": "scope name",
+                        "type": "string"
+                    },
+                    "connectionId": {
+                        "title": "connection id",
+                        "type": "integer"
+                    },
+                    "transformationRuleId": {
+                        "title": "Transformation rule id",
+                        "type": "integer"
+                    }
+                },
+                "required": ["scopeId", "scopeName", "connectionId", "transformationRuleId"]
+            }
+        },
+        "parameters": {
+            "connectionId": {
+                "name": "connectionId",
+                "description": "Id of the connection",
+                "in": "path",
+                "required": true,
+                "schema": {
+                    "type": "int"
+                }
+            },
+            "scopeId": {
+                "name": "scopeId",
+                "description": "Id of the scope",
+                "in": "path",
+                "required": true,
+                "schema": {
+                    "type": "string"
+                }
+            },
+            "ruleId": {
+                "name": "ruleId",
+                "description": "Id of the transformation rule",
+                "in": "path",
+                "required": true,
+                "schema": {
+                    "type": "int"
+                }
+            },
+            "pageSize": {
+                "name": "pageSize",
+                "description": "Number of items per page",
+                "in": "query",
+                "required": false,
+                "schema": {
+                    "type": "integer"
+                }
+            },
+            "page": {
+                "name": "page",
+                "description": "Page number",
+                "in": "query",
+                "required": false,
+                "schema": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}
