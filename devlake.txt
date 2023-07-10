@@ -1,0 +1,47 @@
+devlake本地开发说明：
+通过git命令下载代码到本地
+一、启动config-ui
+  1、node 使用 18.16.1版本
+  2、CMD 进入config-ui目录
+  3、执行 yarn install命令
+  4、执行 yarn build命令
+  5、执行 yarn start 命令
+  6、浏览器访问：http://localhost:4000 即可
+
+二、启动后台
+  1、mysql使用8.0.33.0版本
+  2、拷贝env.example文件到backend目录下，并更名为.env
+  3、修改.env文件
+     db_url=mysql://root:123456@127.0.0.1:3306/db_lake?charset=utf8mb4&parseTime=True 
+     ENCRYPTION_SECRET=clife.cn
+     PLUGIN_DIR=D:/goProject/lake/backend/plugins
+     REMOTE_PLUGIN_DIR=D:/goProject/lake/backend/python
+     
+  4、启动backend目录下的 main.go文件
+  5、本地访问： http://localhost:8080/version  能正常返回表示启动成功
+  
+三、启动插件
+   1、安装go环境
+   2、修改代理 go env -w GOPROXY=https://goproxy.io 或者 export GOPROXY=https://proxy.golang.com.cn,direct
+   3、安装gcc: yum install gcc
+   4、执行 script/compile-plugins.sh  
+   5、报错：No package 'libgit2' found
+      解决办法：删除 gitextractor 目录。猜测 更改 github.com/libgit2/git2go/v33 v33.0.6 h1:F//bA3/pgSTVq2hLNahhnof9NxyCzFF/c3MB6lb93Qo= 版本信息也行
+   6、插件不支持windows
+   
+四、启动grafana
+   1、下载： https://mirrors.tuna.tsinghua.edu.cn/grafana/yum/rpm/
+   2、安装 yum -y install grafana-7.3.3-1.x86_64.rpm 
+   3、配置文件： usr/share/grafana/conf/defaults.ini
+   4、后台启动：nohup ./grafana-server web >/dev/null 2>&1 &
+   5、访问：http://localhost:3000
+   6、修改密码： clife
+   7、安装 grafana-piechart-panel插件：grafana-cli plugins install grafana-piechart-panel
+      修改插件配置 defaults.ini 
+        [plugin.piechart]
+        path = /var/lib/grafana/plugins/grafana-piechart-panel
+   
+  
+  
+  
+  
